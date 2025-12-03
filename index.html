@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>PetShop POS Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="brand">
+        <div class="brand-logo">🐾</div>
+        <div class="brand-text">
+          <h1>PetShop POS</h1>
+          <span>Demo TPV para tienda de mascotas</span>
+        </div>
+      </div>
+      <div class="header-info">
+        <span class="header-badge">Versión demo</span>
+      </div>
+    </header>
+
+    <div class="app-body">
+      <nav class="sidebar">
+        <button class="nav-item active" data-view="dashboard">Dashboard</button>
+        <button class="nav-item" data-view="ventas">Ventas</button>
+        <button class="nav-item" data-view="productos">Productos</button>
+        <button class="nav-item" data-view="clientes">Clientes</button>
+        <button class="nav-item" data-view="reportes">Reportes</button>
+      </nav>
+
+      <main id="view-container" class="view-container">
+        <!-- Aquí se cargan los módulos -->
+      </main>
+    </div>
+
+    <footer class="app-footer">
+      <span>PetShop POS Demo · Hecho para pruebas en Git &amp; Vercel</span>
+    </footer>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
